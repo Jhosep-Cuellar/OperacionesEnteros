@@ -14,7 +14,7 @@ class OperacionesEnteros:
 
     def calcularMCD(self):
         if len(self.__numeros) < 2:
-            raise numeroParametros
+            raise NumeroParametro
         elif len(self.__numeros) == 2:
             return self.MCD(self.__numeros[0], self.__numeros[1])
         elif len(self.__numeros) == 3:
