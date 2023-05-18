@@ -27,3 +27,17 @@ class PruebaOperacionesEnteros(unittest.TestCase):
 
          # Assert
          self.assertEqual(resultadoEsperado, resultadoActual)
+
+    def test_MCD_CuatroNumerosPositivos_retornaMCD(self):
+         numero1 = 10
+         numero2 = 15
+         numero3 = 20
+         numero4 = 25
+         resultadoEsperado = 5
+         operacion = OperacionesEnteros([numero1, numero2, numero3, numero4])
+
+         # Do
+         resultadoActual = operacion.calcularMCD()
+
+         # Assert
+         self.assertEqual(resultadoEsperado, resultadoActual)
